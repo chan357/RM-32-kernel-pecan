@@ -1,8 +1,8 @@
-cmd_arch/arm/mm/tlb-v6.o := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wp,-MD,arch/arm/mm/.tlb-v6.o.d  -nostdinc -isystem /home/ron/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/include -Iinclude  -I/home/ron/RM_kernel_pecan/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__  -mlittle-endian -Iarch/arm/mach-msm/include -mtune=arm1136jf-s -march=armv6j -mfpu=vfp -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables  -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -include asm/unified.h -mfpu=vfp -mtune=arm1136jf-s      -ffast-math -mfpu=vfp -pipe -c -o arch/arm/mm/tlb-v6.o arch/arm/mm/tlb-v6.S
+cmd_arch/arm/mm/tlb-v6.o := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wp,-MD,arch/arm/mm/.tlb-v6.o.d  -nostdinc -isystem /home/ron/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/include -Iinclude  -I/home/ron/kernel/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__  -mlittle-endian -Iarch/arm/mach-msm/include -mtune=arm1136jf-s -march=armv6j -mfpu=vfp -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables  -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -include asm/unified.h -mfpu=vfp -mtune=arm1136jf-s      -ffast-math -mfpu=vfp -pipe -c -o arch/arm/mm/tlb-v6.o arch/arm/mm/tlb-v6.S
 
 deps_arch/arm/mm/tlb-v6.o := \
   arch/arm/mm/tlb-v6.S \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/unified.h \
+  /home/ron/kernel/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
     $(wildcard include/config/thumb2/kernel.h) \
   include/linux/init.h \
@@ -14,9 +14,9 @@ deps_arch/arm/mm/tlb-v6.o := \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
   include/linux/linkage.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/linkage.h \
+  /home/ron/kernel/arch/arm/include/asm/linkage.h \
   include/asm/asm-offsets.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/page.h \
+  /home/ron/kernel/arch/arm/include/asm/page.h \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
@@ -29,7 +29,7 @@ deps_arch/arm/mm/tlb-v6.o := \
     $(wildcard include/config/cpu/copy/v6.h) \
     $(wildcard include/config/sparsemem.h) \
   include/asm-generic/getorder.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/tlbflush.h \
+  /home/ron/kernel/arch/arm/include/asm/tlbflush.h \
     $(wildcard include/config/cpu/tlb/v3.h) \
     $(wildcard include/config/cpu/tlb/v4wt.h) \
     $(wildcard include/config/cpu/tlb/fa.h) \
@@ -39,7 +39,7 @@ deps_arch/arm/mm/tlb-v6.o := \
     $(wildcard include/config/cpu/tlb/v6.h) \
     $(wildcard include/config/smp.h) \
     $(wildcard include/config/cpu/tlb/v7.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/glue.h \
+  /home/ron/kernel/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm710.h) \
     $(wildcard include/config/cpu/abrt/lv4t.h) \
@@ -54,9 +54,9 @@ deps_arch/arm/mm/tlb-v6.o := \
     $(wildcard include/config/cpu/pabrt/v7.h) \
   arch/arm/mm/proc-macros.S \
     $(wildcard include/config/cpu/dcache/writethrough.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/thread_info.h \
+  /home/ron/kernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/fpstate.h \
+  /home/ron/kernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
 

@@ -1,4 +1,4 @@
-cmd_fs/cifs/nterr.o := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wp,-MD,fs/cifs/.nterr.o.d  -nostdinc -isystem /home/ron/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/include -Iinclude  -I/home/ron/RM_kernel_pecan/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -mtune=arm1136jf-s -march=armv6j -mfpu=vfp -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -pipe -marm -march=armv6zk -mtune=arm1176jzf-s -mfpu=vfp -funsafe-loop-optimizations -funroll-loops -mfloat-abi=softfp -fomit-frame-pointer -D__ARM_ARCH_5__ -D__ARM_ARCH_5T__ -D__ARM_ARCH_5E__ -D__ARM_ARCH_5TE__ -pipe -marm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2112 -fno-stack-protector -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack -mtune=arm1136jf-s -march=armv6j -mfpu=vfp  -DMODULE -mfpu=vfp -fno-pic -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(nterr)"  -D"KBUILD_MODNAME=KBUILD_STR(cifs)" -D"DEBUG_HASH=23" -D"DEBUG_HASH2=61" -c -o fs/cifs/nterr.o fs/cifs/nterr.c
+cmd_fs/cifs/nterr.o := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wp,-MD,fs/cifs/.nterr.o.d  -nostdinc -isystem /home/ron/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/include -Iinclude  -I/home/ron/kernel/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -mtune=arm1136jf-s -march=armv6j -mfpu=vfp -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -pipe -marm -march=armv6zk -mtune=arm1176jzf-s -mfpu=vfp -funsafe-loop-optimizations -funroll-loops -mfloat-abi=softfp -fomit-frame-pointer -D__ARM_ARCH_5__ -D__ARM_ARCH_5T__ -D__ARM_ARCH_5E__ -D__ARM_ARCH_5TE__ -pipe -marm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2112 -fno-stack-protector -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack -mtune=arm1136jf-s -march=armv6j -mfpu=vfp  -DMODULE -mfpu=vfp -fno-pic -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(nterr)"  -D"KBUILD_MODNAME=KBUILD_STR(cifs)" -D"DEBUG_HASH=23" -D"DEBUG_HASH2=61" -c -o fs/cifs/nterr.o fs/cifs/nterr.c
 
 deps_fs/cifs/nterr.o := \
   fs/cifs/nterr.c \
@@ -8,9 +8,9 @@ deps_fs/cifs/nterr.o := \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/types.h \
+  /home/ron/kernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/bitsperlong.h \
+  /home/ron/kernel/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
   include/linux/stddef.h \
@@ -23,7 +23,7 @@ deps_fs/cifs/nterr.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/posix_types.h \
+  /home/ron/kernel/arch/arm/include/asm/posix_types.h \
   include/linux/fs.h \
     $(wildcard include/config/dnotify.h) \
     $(wildcard include/config/sysfs.h) \
@@ -43,27 +43,27 @@ deps_fs/cifs/nterr.o := \
     $(wildcard include/config/migration.h) \
   include/linux/limits.h \
   include/linux/ioctl.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/ioctl.h \
+  /home/ron/kernel/arch/arm/include/asm/ioctl.h \
   include/asm-generic/ioctl.h \
   include/linux/linkage.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/linkage.h \
+  /home/ron/kernel/arch/arm/include/asm/linkage.h \
   include/linux/wait.h \
     $(wildcard include/config/lockdep.h) \
   include/linux/list.h \
     $(wildcard include/config/debug/list.h) \
   include/linux/poison.h \
   include/linux/prefetch.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/processor.h \
+  /home/ron/kernel/arch/arm/include/asm/processor.h \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/cpu/32v6k.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/ptrace.h \
+  /home/ron/kernel/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/hwcap.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/cache.h \
+  /home/ron/kernel/arch/arm/include/asm/hwcap.h \
+  /home/ron/kernel/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/system.h \
+  /home/ron/kernel/arch/arm/include/asm/system.h \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/arch/msm.h) \
@@ -76,7 +76,7 @@ deps_fs/cifs/nterr.o := \
     $(wildcard include/config/trace/irqflags/support.h) \
     $(wildcard include/config/x86.h) \
   include/linux/typecheck.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/irqflags.h \
+  /home/ron/kernel/arch/arm/include/asm/irqflags.h \
   include/asm-generic/cmpxchg-local.h \
   include/linux/spinlock.h \
     $(wildcard include/config/debug/spinlock.h) \
@@ -91,18 +91,18 @@ deps_fs/cifs/nterr.o := \
     $(wildcard include/config/generic/find/first/bit.h) \
     $(wildcard include/config/generic/find/last/bit.h) \
     $(wildcard include/config/generic/find/next/bit.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/bitops.h \
+  /home/ron/kernel/arch/arm/include/asm/bitops.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/fls64.h \
   include/asm-generic/bitops/sched.h \
   include/asm-generic/bitops/hweight.h \
   include/asm-generic/bitops/lock.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/thread_info.h \
+  /home/ron/kernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/fpstate.h \
+  /home/ron/kernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/domain.h \
+  /home/ron/kernel/arch/arm/include/asm/domain.h \
     $(wildcard include/config/verify/permission/fault.h) \
     $(wildcard include/config/io/36.h) \
   include/linux/kernel.h \
@@ -121,21 +121,21 @@ deps_fs/cifs/nterr.o := \
     $(wildcard include/config/arch/has/ilog2/u64.h) \
   include/linux/ratelimit.h \
   include/linux/param.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/param.h \
+  /home/ron/kernel/arch/arm/include/asm/param.h \
     $(wildcard include/config/hz.h) \
   include/linux/dynamic_debug.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/byteorder.h \
+  /home/ron/kernel/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/swab.h \
+  /home/ron/kernel/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/bug.h \
+  /home/ron/kernel/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/div64.h \
+  /home/ron/kernel/arch/arm/include/asm/div64.h \
   include/linux/stringify.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
@@ -144,10 +144,10 @@ deps_fs/cifs/nterr.o := \
     $(wildcard include/config/lock/stat.h) \
     $(wildcard include/config/generic/hardirqs.h) \
   include/linux/spinlock_up.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/atomic.h \
+  /home/ron/kernel/arch/arm/include/asm/atomic.h \
   include/asm-generic/atomic-long.h \
   include/linux/spinlock_api_up.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/current.h \
+  /home/ron/kernel/arch/arm/include/asm/current.h \
   include/linux/kdev_t.h \
   include/linux/dcache.h \
   include/linux/rculist.h \
@@ -167,14 +167,14 @@ deps_fs/cifs/nterr.o := \
   include/linux/bitmap.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/string.h \
+  /home/ron/kernel/arch/arm/include/asm/string.h \
   include/linux/seqlock.h \
   include/linux/completion.h \
   include/linux/rcutree.h \
     $(wildcard include/config/no/hz.h) \
   include/linux/path.h \
   include/linux/stat.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/stat.h \
+  /home/ron/kernel/arch/arm/include/asm/stat.h \
   include/linux/time.h \
     $(wildcard include/config/arch/uses/gettimeoffset.h) \
   include/linux/math64.h \
@@ -182,7 +182,7 @@ deps_fs/cifs/nterr.o := \
     $(wildcard include/config/hotplug.h) \
   include/linux/sysfs.h \
   include/linux/errno.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/errno.h \
+  /home/ron/kernel/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
   include/linux/kref.h \
@@ -210,7 +210,7 @@ deps_fs/cifs/nterr.o := \
   include/linux/sunrpc/msg_prot.h \
   include/linux/inet.h \
   include/linux/fcntl.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/fcntl.h \
+  /home/ron/kernel/arch/arm/include/asm/fcntl.h \
   include/asm-generic/fcntl.h \
   include/linux/err.h \
   fs/cifs/nterr.h \

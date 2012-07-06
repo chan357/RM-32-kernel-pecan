@@ -1,1 +1,1 @@
-cmd_drivers/mtd/tests/mtd_pagetest.ko := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL -r  -T /home/ron/RM_kernel_pecan/scripts/module-common.lds --build-id -o drivers/mtd/tests/mtd_pagetest.ko drivers/mtd/tests/mtd_pagetest.o drivers/mtd/tests/mtd_pagetest.mod.o
+cmd_drivers/mtd/tests/mtd_pagetest.ko := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL -r  -T /home/ron/kernel/scripts/module-common.lds --build-id -o drivers/mtd/tests/mtd_pagetest.ko drivers/mtd/tests/mtd_pagetest.o drivers/mtd/tests/mtd_pagetest.mod.o

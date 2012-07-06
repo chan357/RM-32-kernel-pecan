@@ -1,4 +1,4 @@
-cmd_arch/arm/boot/compressed/misc.o := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wp,-MD,arch/arm/boot/compressed/.misc.o.d  -nostdinc -isystem /home/ron/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/include -Iinclude  -I/home/ron/RM_kernel_pecan/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -mtune=arm1136jf-s -march=armv6j -mfpu=vfp -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -pipe -marm -march=armv6zk -mtune=arm1176jzf-s -mfpu=vfp -funsafe-loop-optimizations -funroll-loops -mfloat-abi=softfp -fomit-frame-pointer -D__ARM_ARCH_5__ -D__ARM_ARCH_5T__ -D__ARM_ARCH_5E__ -D__ARM_ARCH_5TE__ -pipe -marm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2112 -fno-stack-protector -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack -mtune=arm1136jf-s -march=armv6j -mfpu=vfp -fpic -fno-builtin -Dstatic=  -ffast-math -mfpu=vfp -pipe -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(misc)"  -D"KBUILD_MODNAME=KBUILD_STR(misc)" -D"DEBUG_HASH=37" -D"DEBUG_HASH2=34" -c -o arch/arm/boot/compressed/misc.o arch/arm/boot/compressed/misc.c
+cmd_arch/arm/boot/compressed/misc.o := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wp,-MD,arch/arm/boot/compressed/.misc.o.d  -nostdinc -isystem /home/ron/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/include -Iinclude  -I/home/ron/kernel/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -mtune=arm1136jf-s -march=armv6j -mfpu=vfp -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -pipe -marm -march=armv6zk -mtune=arm1176jzf-s -mfpu=vfp -funsafe-loop-optimizations -funroll-loops -mfloat-abi=softfp -fomit-frame-pointer -D__ARM_ARCH_5__ -D__ARM_ARCH_5T__ -D__ARM_ARCH_5E__ -D__ARM_ARCH_5TE__ -pipe -marm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2112 -fno-stack-protector -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack -mtune=arm1136jf-s -march=armv6j -mfpu=vfp -fpic -fno-builtin -Dstatic=  -ffast-math -mfpu=vfp -pipe -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(misc)"  -D"KBUILD_MODNAME=KBUILD_STR(misc)" -D"DEBUG_HASH=37" -D"DEBUG_HASH2=34" -c -o arch/arm/boot/compressed/misc.o arch/arm/boot/compressed/misc.c
 
 deps_arch/arm/boot/compressed/misc.o := \
   arch/arm/boot/compressed/misc.c \
@@ -20,25 +20,25 @@ deps_arch/arm/boot/compressed/misc.o := \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/types.h \
+  /home/ron/kernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/bitsperlong.h \
+  /home/ron/kernel/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
   include/linux/stddef.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/posix_types.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/string.h \
+  /home/ron/kernel/arch/arm/include/asm/posix_types.h \
+  /home/ron/kernel/arch/arm/include/asm/string.h \
   arch/arm/mach-msm/include/mach/uncompress.h \
   include/linux/io.h \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/has/ioport.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/io.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/byteorder.h \
+  /home/ron/kernel/arch/arm/include/asm/io.h \
+  /home/ron/kernel/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/swab.h \
+  /home/ron/kernel/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/memory.h \
+  /home/ron/kernel/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/highmem.h) \
@@ -2602,13 +2602,13 @@ deps_arch/arm/boot/compressed/misc.o := \
     $(wildcard include/config/mach/msm7x27/hazel.h) \
     $(wildcard include/config/mach/msm8x55/svlte/ffa.h) \
     $(wildcard include/config/mach/msm8x55/svlte/surf.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/sizes.h \
+  /home/ron/kernel/arch/arm/include/asm/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
     $(wildcard include/config/sparsemem.h) \
   arch/arm/mach-msm/include/mach/io.h \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/page.h \
+  /home/ron/kernel/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -2617,7 +2617,7 @@ deps_arch/arm/boot/compressed/misc.o := \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
-  /home/ron/RM_kernel_pecan/arch/arm/include/asm/glue.h \
+  /home/ron/kernel/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm710.h) \
     $(wildcard include/config/cpu/abrt/lv4t.h) \

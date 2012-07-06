@@ -1,1 +1,1 @@
-cmd_fs/fuse/fuse.ko := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL -r  -T /home/ron/RM_kernel_pecan/scripts/module-common.lds --build-id -o fs/fuse/fuse.ko fs/fuse/fuse.o fs/fuse/fuse.mod.o
+cmd_fs/fuse/fuse.ko := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL -r  -T /home/ron/kernel/scripts/module-common.lds --build-id -o fs/fuse/fuse.ko fs/fuse/fuse.o fs/fuse/fuse.mod.o

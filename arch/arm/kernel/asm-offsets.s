@@ -11,9 +11,8 @@
 @ GNU C (GCC) version 4.4.0 (arm-eabi)
 @	compiled by GNU C version 4.0.3 (Ubuntu 4.0.3-1ubuntu5), GMP version 4.2.4, MPFR version 2.4.1.
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-@ options passed:  -nostdinc -Iinclude
-@ -I/home/ron/RM_kernel_pecan/arch/arm/include -Iarch/arm/mach-msm/include
-@ -iprefix
+@ options passed:  -nostdinc -Iinclude -I/home/ron/kernel/arch/arm/include
+@ -Iarch/arm/mach-msm/include -iprefix
 @ /home/ron/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/
 @ -D__USES_INITFINI__ -D__KERNEL__ -D__ARM_ARCH_5__ -D__ARM_ARCH_5T__
 @ -D__ARM_ARCH_5E__ -D__ARM_ARCH_5TE__ -D__LINUX_ARM_ARCH__=6 -Uarm
