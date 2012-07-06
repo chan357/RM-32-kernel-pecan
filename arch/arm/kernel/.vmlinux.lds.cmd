@@ -61,6 +61,7 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
+    $(wildcard include/config/memory/hotplug/sparse.h) \
   include/asm-generic/getorder.h \
 
 arch/arm/kernel/vmlinux.lds: $(deps_arch/arm/kernel/vmlinux.lds)

@@ -8,6 +8,7 @@ deps_arch/arm/mm/init.o := \
     $(wildcard include/config/holes/in/zone.h) \
     $(wildcard include/config/highmem.h) \
     $(wildcard include/config/sparsemem.h) \
+    $(wildcard include/config/memory/hotplug/sparse.h) \
     $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/sa1111.h) \
     $(wildcard include/config/have/tcm.h) \

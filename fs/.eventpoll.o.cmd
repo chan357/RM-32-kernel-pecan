@@ -231,6 +231,7 @@ deps_fs/eventpoll.o := \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
     $(wildcard include/config/sparsemem.h) \
+    $(wildcard include/config/memory/hotplug/sparse.h) \
   /home/ron/kernel/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm710.h) \

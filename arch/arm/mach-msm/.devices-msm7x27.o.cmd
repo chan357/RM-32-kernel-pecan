@@ -210,6 +210,7 @@ deps_arch/arm/mach-msm/devices-msm7x27.o := \
     $(wildcard include/config/cpu/copy/fa.h) \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
+    $(wildcard include/config/memory/hotplug/sparse.h) \
   /home/ron/kernel/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm710.h) \

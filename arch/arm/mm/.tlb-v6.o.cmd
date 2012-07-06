@@ -28,6 +28,7 @@ deps_arch/arm/mm/tlb-v6.o := \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
     $(wildcard include/config/sparsemem.h) \
+    $(wildcard include/config/memory/hotplug/sparse.h) \
   include/asm-generic/getorder.h \
   /home/ron/kernel/arch/arm/include/asm/tlbflush.h \
     $(wildcard include/config/cpu/tlb/v3.h) \

@@ -206,6 +206,7 @@ deps_drivers/base/init.o := \
     $(wildcard include/config/cpu/copy/fa.h) \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
+    $(wildcard include/config/memory/hotplug/sparse.h) \
   /home/ron/kernel/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm710.h) \
@@ -2872,7 +2873,6 @@ deps_drivers/base/init.o := \
   include/linux/pm_wakeup.h \
     $(wildcard include/config/pm.h) \
   include/linux/memory.h \
-    $(wildcard include/config/memory/hotplug/sparse.h) \
     $(wildcard include/config/mem/block/size.h) \
   include/linux/sysdev.h \
   include/linux/node.h \
