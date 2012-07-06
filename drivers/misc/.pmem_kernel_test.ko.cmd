@@ -1,0 +1,1 @@
+cmd_drivers/misc/pmem_kernel_test.ko := ../prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL -r  -T /home/ron/RM_kernel_pecan/scripts/module-common.lds --build-id -o drivers/misc/pmem_kernel_test.ko drivers/misc/pmem_kernel_test.o drivers/misc/pmem_kernel_test.mod.o

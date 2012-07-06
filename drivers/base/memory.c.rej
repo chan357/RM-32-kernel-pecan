@@ -1,0 +1,17 @@
+--- drivers/base/memory.c
++++ drivers/base/memory.c
+@@ -420,6 +450,14 @@
+ 				&class_attr_low_power.attr);
+ }
+ #else
++static inline int memory_remove_init(void)
++{
++	return 0;
++}
++static inline int memory_active_init(void)
++{
++	return 0;
++}
+ static inline int memory_low_power_init(void)
+ {
+ 	return 0;

@@ -1,0 +1,10 @@
+--- drivers/media/video/msm/msm_vfe31.c
++++ drivers/media/video/msm/msm_vfe31.c
+@@ -187,6 +187,7 @@
+ 		{V31_SYNC_TIMER_SETTING, V31_SYNC_TIMER_LEN,
+ 			V31_SYNC_TIMER_OFF},
+ /*105*/	{V31_ASYNC_TIMER_SETTING, V31_ASYNC_TIMER_LEN, V31_ASYNC_TIMER_OFF},
++		{V31_LIVESHOT},
+ };
+ 
+ static void vfe_addr_convert(struct msm_vfe_phy_info *pinfo,
