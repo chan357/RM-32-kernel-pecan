@@ -1369,14 +1369,14 @@ static void usb_reset(struct usb_info *ui)
 		tmp = ulpi_read(ui, 0x04);
 		tmp |= 0x4;
 		ulpi_write(ui, tmp, 0x04);
-		
+
 		writel(readl(USB_PORTSC) | (1<<24), USB_PORTSC);
 
 		// For factory mode switching
 		extern int android_set_pid(const char *val, struct kernel_param *kp); 
 		android_set_pid(LGE_FACTORY_USB_PID_STRING, NULL);
 	}
-	
+
 #endif
 /* LGE_CHANGES_E [younsuk.song@lge.com] 2010-06-21 */
 
@@ -2396,7 +2396,7 @@ static int msm72k_probe(struct platform_device *pdev)
 
 	dev_dbg(&pdev->dev, "msm72k_probe\n");
 	pr_info("%s\n", __func__);
-	
+
 	ui = kzalloc(sizeof(struct usb_info), GFP_KERNEL);
 	if (!ui)
 		return -ENOMEM;
