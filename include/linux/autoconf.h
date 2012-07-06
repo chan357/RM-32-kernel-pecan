@@ -1,7 +1,7 @@
 /*
  * Automatically generated C config: don't edit
  * Linux kernel version: 2.6.32.59
- * Sat Jul  7 00:44:17 2012
+ * Sat Jul  7 02:11:22 2012
  */
 #define AUTOCONF_INCLUDED
 #define CONFIG_VIDEO_V4L1_COMPAT 1
@@ -483,6 +483,7 @@
 #define CONFIG_BT 1
 #define CONFIG_NETFILTER_XT_TARGET_CONNMARK 1
 #define CONFIG_NF_CONNTRACK 1
+#define CONFIG_MSM_BUS_SCALING 1
 #define CONFIG_MSM_SMD_LOGGING 1
 #define CONFIG_USB_SUPPORT_LGE_ANDROID_ECM_FIX 1
 #define CONFIG_NF_CONNTRACK_AMANDA 1

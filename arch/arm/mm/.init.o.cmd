@@ -11,6 +11,8 @@ deps_arch/arm/mm/init.o := \
     $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/sa1111.h) \
     $(wildcard include/config/have/tcm.h) \
+    $(wildcard include/config/hotplug/cpu.h) \
+    $(wildcard include/config/memory/hotplug.h) \
   include/linux/kernel.h \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/preempt/voluntary.h) \
@@ -148,7 +150,6 @@ deps_arch/arm/mm/init.o := \
     $(wildcard include/config/force/max/zoneorder.h) \
     $(wildcard include/config/zone/dma.h) \
     $(wildcard include/config/zone/dma32.h) \
-    $(wildcard include/config/memory/hotplug.h) \
     $(wildcard include/config/arch/populates/node/map.h) \
     $(wildcard include/config/flat/node/mem/map.h) \
     $(wildcard include/config/have/memory/present.h) \
@@ -2815,7 +2816,6 @@ deps_arch/arm/mm/init.o := \
     $(wildcard include/config/function/graph/tracer.h) \
     $(wildcard include/config/cpumask/offstack.h) \
     $(wildcard include/config/have/unstable/sched/clock.h) \
-    $(wildcard include/config/hotplug/cpu.h) \
     $(wildcard include/config/stack/growsup.h) \
     $(wildcard include/config/debug/stack/usage.h) \
     $(wildcard include/config/group/sched.h) \
